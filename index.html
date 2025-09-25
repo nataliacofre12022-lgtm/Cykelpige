@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cykelpige</title>
+        <!-- ref til mit eget stylesheet-->
+         <link rel="stylesheet" href="style.css">
+    <!-- ref til FontAwesome stylesheet (så jeg kan bruge deres ikoner)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+        <nav class="nav">
+<a class="logo" href="#">Logo</a>
+<div class="links" id="myTopnav">
+    <a href="#">Priser</a>
+    <a href="#">Om os</a>
+    <a href="#">Kontakt</a>
+
+      <!-- Burger ikon til mobil -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+</div>
+</nav>
+</header>
+
+<main class="content">
+      <!-- Venstre: byer -->
+    <aside class="box">
+        <p>Byer</p>
+        <ul>
+            <li><a href="#København">København</a></li>
+            <li><a href="#London">London</a></li>
+            <li><a href="#Paris">Paris</a></li>
+            <li><a href="#Tokyo">Tokyo</a></li>
+        </ul>
+    </aside>
+
+  <!-- Midten: tekst -->
+<section class="tekst">
+    <h1>“Pigerne elsker at cykle – uanset vejret”</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quam! Possimus inventore asperiores quo adipisci, eveniet laborum! Esse numquam facere laborum asperiores repudiandae, placeat voluptatem, soluta illum delectus culpa reiciendis id! Magni nulla hic doloribus eius, unde fugit iure.
+    </p>
+    <p> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quam! Possimus inventore asperiores quo adipisci, eveniet laborum! Esse numquam facere laborum asperiores repudiandae, placeat voluptatem, soluta illum delectus culpa reiciendis id! Magni nulla hic doloribus eius, unde fugit iure. 
+    </p>
+</section>
+
+    <!-- Højre billede -->
+  <aside class="image">
+    <img src="cykelpige.jpg" alt="Piger cykler i al slags vejr">
+  </aside>  
+</main>
+
+
+<!-- Sidefod -->
+ <footer class="footer">
+     <p>© Cykelpige 2025</p>
+    </footer>
+
+<script>
+  // Korrekt toggle: 'links' <-> 'links responsive'
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "links") {
+      x.className += " responsive";
+    } else {
+      x.className = "links";
+    }
+  }
+</script>
+
+</body>
+</html>
